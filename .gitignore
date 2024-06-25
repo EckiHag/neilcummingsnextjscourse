@@ -28,6 +28,13 @@ yarn-error.log*
 # local env files
 .env*.local
 
+# Zugänge
+zZugang.md
+zServerabsicherung.md
+zZugang_sshd_config.md
+zDeployinOnServer.md
+zStellungnahmen.md
+
 # vercel
 .vercel
 

@@ -24,6 +24,7 @@ export default function TopNav() {
         <NavLink href="/members" label="Matches" />
         <NavLink href="/lists" label="Lists" />
         <NavLink href="/messages" label="Messages" />
+        <NavLink href="/news" label="News" />
       </NavbarContent>
       <NavbarContent justify="end">
         <Button as={Link} href="/login" variant="bordered" className="text-white">
