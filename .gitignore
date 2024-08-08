@@ -29,12 +29,16 @@ yarn-error.log*
 .env*.local
 
 # Zugänge
-zZugang.md
-zServerabsicherung.md
-zZugang_sshd_config.md
+zAbschnitt3.md
 zDeployinOnServer.md
+zGit.md
+zNeilcummingsnextjscourse.md
+zPlacesMySqlNew.md
+zPrisma.md
+zServerabsicherung.md
 zStellungnahmen.md
-
+zZugang_sshd_config.md
+zZugang.md
 # vercel
 .vercel
 

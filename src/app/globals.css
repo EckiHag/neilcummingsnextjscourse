@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .vertical-center {
+    height: calc(100vh - 164px);
+  }
+
+  .bg-white {
+    background-color: #f0f0f0; /* oder jede andere gewünschte Farbe */
+  }
+  .bg-beige {
+    background-color: #f8e1ae; /* oder jede andere gewünschte Farbe */
+  }
+}
