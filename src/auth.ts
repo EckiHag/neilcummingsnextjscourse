@@ -1,3 +1,5 @@
+// auth.ts
+
 import NextAuth from "next-auth"
 import { PrismaAdapter } from "@auth/prisma-adapter"
 import authConfig from "./auth.config"
@@ -15,6 +17,18 @@ export const {
         session.user.id = token.sub
       }
       return session
+    },
+    async redirect({ url, baseUrl }) {
+      // Hier kannst du sicherstellen, dass die URL, auf die umgeleitet wird, erlaubt ist.
+      const allowedHosts = ["eckserv.de", "www.eckserv.de", "localhost"]
+      const hostname = new URL(url).hostname
+
+      if (allowedHosts.includes(hostname)) {
+        return url
+      } else {
+        console.error(`Untrusted host attempted to redirect: ${url}`)
+        return baseUrl
+      }
     },
   },
   adapter: PrismaAdapter(prisma),
