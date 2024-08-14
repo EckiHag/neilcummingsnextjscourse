@@ -19,15 +19,16 @@ export const {
       return session
     },
     async redirect({ url, baseUrl }) {
-      // Hier kannst du sicherstellen, dass die URL, auf die umgeleitet wird, erlaubt ist.
       const allowedHosts = ["eckserv.de", "www.eckserv.de", "localhost"]
+
+      // Wenn die URL ein externer Host ist, überprüfen wir, ob er vertrauenswürdig ist
       const hostname = new URL(url).hostname
 
       if (allowedHosts.includes(hostname)) {
         return url
       } else {
         console.error(`Untrusted host attempted to redirect: ${url}`)
-        return baseUrl
+        return baseUrl // Fallback zu baseUrl, wenn der Host nicht vertrauenswürdig ist
       }
     },
   },
