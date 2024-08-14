@@ -1,5 +1,5 @@
 // prisma.ts
-const fs = require("fs")
+// const fs = require("fs")
 import "@/envConfig" // Läd die Umgebungsvariablen mit @next/env
 import { PrismaClient } from "@prisma/client"
 
@@ -9,10 +9,10 @@ export const prisma = new PrismaClient({
   log: ["query", "info", "warn", "error"],
 })
 
-const logStream = fs.createWriteStream("@/to/your/prisma.log", { flags: "a" })
+// const logStream = fs.createWriteStream("@/to/your/prisma.log", { flags: "a" })
 
-console.log = (msg) => logStream.write(msg + "\n")
-console.error = (msg) => logStream.write(msg + "\n")
+// console.log = (msg) => logStream.write(msg + "\n")
+// console.error = (msg) => logStream.write(msg + "\n")
 
 // const globalForPrisma = global as unknown as { prisma: PrismaClient }
 
