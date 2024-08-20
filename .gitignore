@@ -30,16 +30,18 @@ yarn-error.log*
 .env
 
 # Zugänge
-zAbschnitt3.md
-zDeployinOnServer.md
-zGit.md
-zNeilcummingsnextjscourse.md
-zPlacesMySqlNew.md
-zPrisma.md
-zServerabsicherung.md
-zStellungnahmen.md
-zZugang_sshd_config.md
-zZugang.md
+CummingsFrom2To3.md
+CummingsFrom3To4.md
+CummingsMysqlNetcup.md
+DeployinOnServer.md
+GitCommands.md
+PlacesMySqlNew.md
+Prisma.md
+Server_Absicherung_StellungnahmenWgBruteForce.md
+Server_Absicherung.md
+Server_Zugang_sshd_config.md
+Server_Zugang.md
+240814 .env Server untrustedHost.md
 # vercel
 .vercel
 
