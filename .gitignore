@@ -30,6 +30,7 @@ yarn-error.log*
 .env
 
 # Zugänge
+/assets
 CummingsFrom2To3.md
 CummingsFrom3To4.md
 CummingsMysqlNetcup.md
